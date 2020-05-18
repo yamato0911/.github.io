@@ -18,8 +18,8 @@
   font-size: 14px;
 }
 
-.f-30 {
-  font-size: 30px;
+.f-24 {
+  font-size: 24px;
   color: white;
 }
 
@@ -713,6 +713,7 @@ header .md__header__all .md__header__right .apply .apply__btn .fa-pen {
   color: #555;
   vertical-align: text-bottom;
   margin: 0;
+  padding-right: 18px;
 }
 
 .section5 .faq .section5-text::before {
@@ -1030,41 +1031,41 @@ header .md__header__all .md__header__right .apply .apply__btn .fa-pen {
   padding: 0 !important;
 }
 
-.section10 .section10-row1 .col-5 {
+.section10 .section10-row1 .col-7 {
   padding: 0;
   text-align: end;
 }
 
-.section10 .section10-row1 .col-5 .section-title {
+.section10 .section10-row1 .col-7 .section-title {
   text-align: start;
   color: white;
 }
 
-.section10 .section10-row1 .col-5 .title-text {
+.section10 .section10-row1 .col-7 .title-text {
   text-align: start;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-.section10 .section10-row1 .col-5 .title-text span {
+.section10 .section10-row1 .col-7 .title-text span {
   display: inline-block;
   margin-top: 8px;
 }
 
-.section10 .section10-row1 .col-5 .section4-title-img {
+.section10 .section10-row1 .col-7 .section4-title-img {
   text-align: end;
   width: 130px;
   height: 110px;
 }
 
-.section10 .section10-row1 .col-5 .section10-honda-img {
+.section10 .section10-row1 .col-7 .apply-img {
+  width: 140px;
+}
+
+.section10 .section10-row1 .section10-honda-img {
   text-align: end;
   width: 130px;
   height: 180px;
-}
-
-.section10 .section10-row1 .col-5 .apply-img {
-  width: 140px;
 }
 
 .section10 .row-child {
