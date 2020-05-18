@@ -3,425 +3,748 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airbnb</title>
+    <title>LINEモバイル</title>
+    <script src="https://kit.fontawesome.com/f38622641d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="d-none d-xl-flex align-items-center">
-        <div class="header-left d-flex">
-            <div><i class="fab fa-airbnb nav-airbnb2"></i></div>
-            <ul class="d-flex my-0 align-items-center">
-                <li class="li1"><a href="#" class="active mr-4">概要</a></li>
-                <li><a href="#" class="mr-4">準備</a></li>
-                <li><a href="#" class="mr-4">安全</a></li>
-                <li><a href="#" class="mr-4">マネープラン</a></li>
-            </ul>
-        </div>
-        <div class="header-right d-flex align-items-center ml-auto">
-            <p class="header-right-p1 mr-2 mb-0">予想月収<span><i class="far fa-question-circle header-circle"></i></span></p>
-            <p class="header-right-p2 mr-3 mb-0">¥<span class="ml-1">134,287</span></p>
-            <div class=" rounded text-center mb-0">
-                <a href="#" class="header-right-btn" >はじめる</a>
-            </div>
 
-        </div>
+    <header>
+        <div class="sm-header d-lg-none">
+            <div class="sm-header-left">
+              <a href="#">
+                <img src="https://mobile.line.me/common/img/logo.png" alt="" class="sm-header-logo">
+              </a>
+            </div>
+            <div class="sm-header-right">
+                <a href="#" class="apply-btn">申し込む</a>
+                <div class="icon">
+                  <a href="#">
+                    <img src="https://mobile.line.me/common/img/ico_menu_open2Sp.png" alt="">
+                  </a>
+                </div>
+            </div>
+          </div>
+        <div class="md__header__all d-none d-lg-flex">
+          <div class="md__header__left">
+              <img class="head__logo" src="img/logo.png" alt="LINEモバイルのロゴです">
+          </div>
+          <div class="md__header__center">
+              <ul>
+                  <li><a href="https://mobile.line.me/beginner/">はじめに</a></li>
+                  <li><a href="https://mobile.line.me/plan/">料金プラン</a></li>
+                  <li><a href="https://mobile.line.me/plan/">端末</a></li>
+                  <li><a href="https://mobile.line.me/support/">サポート</a></li>
+                  <li><a href="https://mobile.line.me/shop/">店舗</a></li>
+                  <li><a href="https://mobile.line.me/event/">キャンペーン</a></li>
+              </ul>
+          </div>
+          <div class="md__header__right">
+              <p>マイページ</p>
+              <div class="apply">
+                  <a  class=" apply__btn" href="https://mobile.line.me/order/"><span><i class="fas fa-pen"></i>申し込む</span></a>                   
+              </div>
+          </div>
+      </div>
     </header>
 
-        <div class="header">
-            <div class="header-box d-none d-xl-block">
-                <div class="box-container">
-                    <div class="">
-                        <h1 class="box-h1">Airbnbホストになって、暮らしをレベルアップ</h1>
-                    </div>
-
-                    <div class="">
-                        <div class="mb-2">宿泊施設の内容を記入</div>
-                        <div class="form-group ">
-                            <input type="text" class="form-control" value="東京">
-                        </div>
-                        <div class="d-flex">
-                            <div class="form-group form1 mr-3">
-                                <select name="room-type" id="room-type" class="form-control">
-                                    <option value="1">選択してください</option>
-                                    <option value="1">まるまる貸切</option>
-                                    <option value="1">個室</option>
-                                    <option value="1">シェアルーム</option>
-                                </select>
-                            </div>
-                
-                            <div class="form-group form2">
-                                <select name="guest" id="guest" class="form-control">
-                                    <option value="1">ゲスト1人</option>
-                                    <option value="2">ゲスト2人</option>
-                                    <option value="3">ゲスト3人</option>
-                                    <option value="4">ゲスト4人</option>
-                                    <option value="5">ゲスト5人</option>
-                                    <option value="6">ゲスト6人</option>
-                                    <option value="7">ゲスト7人</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="start-btn rounded text-center my-2 p-3">
-                            <a href="#" class="" >はじめる</a>
-                        </div>
-                    </div>
-                </div>
+    <div id="carouselExampleControls" class="carousel slide mb-sm d-lg-none sm-carousel" data-ride="carousel">
+      <ol class="carousel-indicators slick-dots">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://mobile.line.me/webapi/img/banner/sp_banner_238.png" class="d-block w-100 carousel-img" alt="...">
         </div>
-
-            <div class="nav-icon d-flex d-xl-none">
-                <div class="mr-2"><i class="fab fa-airbnb nav-airbnb"></i></div>
-                <div><i class="fas fa-chevron-down nav-down"></i></div>
-            </div>
-            <div class="h1 d-xl-none">
-                <h1 class="title-h1">Airbnbホストになって、暮らしをレベルアップ</h1>
-            </div>
-
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/sp_banner_223.png" class="d-block w-100 carousel-img" alt="...">
         </div>
-    
-
-<div class="container-fluid">
-
-    <div class="main1 my-4 col-md-10 mx-md-auto d-xl-none">
-        <div class="mb-2">宿泊施設の内容を記入</div>
-        <div class="form-group">
-            <input type="text" class="form-control" value="東京">
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/sp_banner_246.jpg" class="d-block w-100 carousel-img" alt="...">
         </div>
-        <div class="d-md-flex">
-            <div class="form-group">
-                <select name="room-type" id="room-type" class="form-control">
-                    <option value="1">選択してください</option>
-                    <option value="1">まるまる貸切</option>
-                    <option value="1">個室</option>
-                    <option value="1">シェアルーム</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <select name="guest" id="guest" class="form-control">
-                    <option value="1">ゲスト1人</option>
-                    <option value="2">ゲスト2人</option>
-                    <option value="3">ゲスト3人</option>
-                    <option value="4">ゲスト4人</option>
-                    <option value="5">ゲスト5人</option>
-                    <option value="6">ゲスト6人</option>
-                    <option value="7">ゲスト7人</option>
-                </select>
-            </div>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/sp_banner_236.png" class="d-block w-100 carousel-img" alt="...">
         </div>
-        <!-- <div class="money col-sm-12 my-2">
-           <p>¥<span>134,287</span><i class="far fa-question-circle"></i></span></p>
-        </div> -->
-        <div class="start-btn rounded text-center my-2 p-3">
-            <a href="#" class="col-sm-12" >はじめる</a>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/sp_banner_240.png" class="d-block w-100 carousel-img" alt="...">
         </div>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/sp_banner_241.png" class="d-block w-100 carousel-img" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <span class="sr-only"></span>
+      </a>
     </div>
 
-    <div class="main2 container-fluid mt-5">
-        <div class="main2-part1 mx-md-auto d-xl-flex">
-            <div class="h3-part1 my-5">
-                <h3 class="mt-4">Airbnbでホストするこれだけの理由</h3>
-                <p>どんなお家やお部屋でも、Airbnbなら簡単かつ安全にシェアでき、世界中の旅好きな仲間とつながれます。 予約可能日から料金、ハウスルール、ゲストとの交流程度まで、すべて自分で決めることができます。</p>
-            </div>
-            <div class="h3-part mt-5 ">
-                <h3 class="mt-4">困ったときも安心</h3>
-                <p>万一に備えるUS$1,000,000の財物補償、US$1,000,000の賠償責任保険が全予約に自動付帯。ホストのみなさまと建物・家財の安全をお守りするため全力で取り組んでいます。</p>
-            </div>
+    <div id="carouselExampleControls" class="carousel slide mb-sm d-none d-lg-block" data-ride="carousel">
+      <ol class="carousel-indicators slick-dots">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://mobile.line.me/webapi/img/banner/pc_banner_223.png" class="d-block w-100 carousel-img" alt="...">
         </div>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/pc_banner_238.png" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/pc_banner_246.jpg" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/pc_banner_236.png" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/pc_banner_240.png" class="d-block w-100 carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://mobile.line.me/webapi/img/banner/pc_banner_241.png" class="d-block w-100 carousel-img" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
-    <div class="main3">
-        <div class="main3-part1 container-fluid">
-            <div class="h2-part">
-                <h2 class="mb-5">3ステップでホスティング</h2>
-            </div>
-            <div class="h2-part2 d-xl-flex mx-md-auto">
-                <div class="h2-part3  mx-md-auto mb-4">
-                    <div class="my-4"><i class="far fa-check-circle"></i></div>
-                    <h3 class="my-3">無料でお部屋を掲載</h3>
-                    <p class="mb-5">共有のリビングルームから別荘に至るまで、どんなスペースでも登録料なしで共有しましょう</p>
-                </div>
-                <div class="h2-part3 mx-md-auto">
-                    <div class="my-4"><i class="far fa-check-circle"></i></div>
-                    <h3 class="my-3">ホスティング方法を設定</h3>
-                    <p class="mb-5">スケジュール、料金、ゲストへの要件をご自身で選択しましょう。 お困りの際にはいつでもサポートいたします。</p>
-                </div>
-                <div class="h2-part3  mx-md-auto">
-                    <div class="my-4"><i class="far fa-check-circle"></i></div>
-                    <h3 class="my-3">はじめてのゲストが来ます！</h3>
-                    <p class="mb-3">リスティングが掲載されると、条件にかなったゲストから連絡を受けとることができます。 ゲストの到着前に質問があればメッセージを送信できます。</p>
-                    <a href="https://www.airbnb.jp/d/setup" class="a-link">ホストをはじめる方法をチェック</a>
-                </div>
-            </div>
-        </div>
+    <div class="content-width mb-md">
+      <img class="apply-banner w-100 d-lg-none" src="https://mobile.line.me/img/img_top_nowOrder_sp.png" alt="">
+      <img src="https://mobile.line.me/img/img_top_nowOrder_pc.png" alt="" class="d-none d-lg-block mx-auto">
     </div>
 
-    <div class="main4 my-5 container-fluid">
-        <div class="main4-part1 d-md-flex flex-row-reverse">
-            <div class="main4-part2">
-                <img class="img-fluid image2" src="https://picsum.photos/800/800" alt="" >
+      <main>
+        <section class="section1 content-width mb-md">
+          <div class="row w-100">
+            <div class="col-md-4 mb-md" >
+              <div class="inner mb-sm">
+                <img src="https://mobile.line.me/img/ico_top01.png" alt="LINEマーク" class="section1-img mb-xs">
+                <h1 class="section-title mb-xs">
+                  格安スマホ・格安SIMの
+                  <br>
+                  LINEモバイル
+                </h1>
+                <p class="title-text">月々のスマホ代が大手携帯電話会社と比べて格段に安くなる。LINEモバイルは格安スマホのサービスです。</p>
+              </div>
+              <a href="#" class="main-btn">
+                特徴をみる
+              </a>
             </div>
-            <div class="main4-part3 mr-md-5">
-                <div><i class="fas fa-quote-left"></i></div>
-                <p>「ホスト保証」があったからAirbnb参加を決めたといっても過言でないほどで、被害やトラブルがあったときに頼れるサポートがあるのは本当にありがたいですね。</p>
-                <p class="my-2 sub-text">Dennisさんはロンドンのホスト。自由度の高さに魅力を感じています</p>
-                <a href="https://www.airbnb.jp/d/host_testimonial_dennis" class="my-3 d-inline-block check-btn">ホスト実践例をチェック</a>
+            <div class="col-md-4 mb-md" >
+              <div class="inner mb-sm">
+                <img src="https://mobile.line.me/img/ico_top02.png" alt="LINEマーク" class="section1-img mb-xs">
+                <h2 class="section-title mb-xs">
+                  シンプルな
+                  <br class="d-none d-md-block">
+                  料金プラン
+                </h2>
+                <p class="title-text">月額600円（税抜）からのとってもシンプルな料金プラン。料金表をチェックしてあなたに合ったものを選んでください</p>
+              </div>
+              <div>
+                <a href="#" class="main-btn">
+                  料金プランをみる
+                </a>
+              </div>
             </div>
-        </div>
-    </div>
+            <div class="col-md-4 mb-md" >
+              <div class="inner mb-sm">
+                <img src="https://mobile.line.me/img/ico_top03.png" alt="LINEマーク" class="section1-img mb-xs">
+                <h2 class="section-title mb-xs">
+                  豊富な端末
+                  <br class="d-none d-md-block">
+                  ラインアップ
+                </h2>
+                <p class="title-text">月々のスマホ代が大手携帯電話会社と比べて格段に安くなる。LINEモバイルは格安スマホのサービスです。</p>
+              </div>
+              <div>
+                <a href="#" class="main-btn">
+                  端末をみる
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section class="section2 content-width mb-sm">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="section-title mb-md-3">
+                実施中のキャンペーン
+              </h2>
+              <p class="title-text">
+                ご検討中の方も、既にご利用中の方も<br>
+                嬉しいお得情報がたくさん。
+              </p>
+              <a href="#" class="second-btn">キャンペーン一覧をみる</a>
+            </div>
+            <div class="col-md-6 text-right">
+              <img src="https://mobile.line.me/img/bg_top_campaign_pc.png" alt="" class="section2-img">
+            </div>
+          </div>
 
-    <div class="main5">
-        <div class="main5-part1  container-fluid">
-            <div class="h2-part">
-                <h2 class="my-5">万一の時も安心です</h2> 
-            </div>
-            <div class="main5-part2 d-xl-flex">
-                <div class="main5-part3 my-md-4 mx-md-auto">
-                    <p>大切なお家にお迎えする相手選びは、信頼第一で進めたいですよね。 その思いに応えるため、Airbnbでは宿泊者に求める厳格な要件をホスト自身の手で設定し、滞在前にお互い交流できるシステムを採用しています。 万一のトラブルのときには、Airbnbが全力でサポートします。 建物・家財の被害は「ホスト保証」、賠償責任は「ホスト補償保険」でカバー。ホストのみなさまのあらゆるシチュエーションに対処しています。</p>
-                    <a href="https://www.airbnb.jp/d/safety" class="d-inline-block my-4">ホストを守るAirbnbの仕組みをチェック</a>
-                </div>
-                <div class="main5-part3 my-4 mx-md-auto">
-                    <div class="d-flex mb-2">
-                        <div class="mr-3"><i class="fas fa-check"></i></div>
-                        <p>予約前に政府発行の身分証明書を求める権限</p>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="mr-3"><i class="fas fa-check"></i></div>
-                        <p>ハウスルールに同意しないと泊まれない</p>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="mr-3"><i class="fas fa-check"></i></div>
-                        <p>過去の宿泊のレビューもばっちり読める</p>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="mr-3"><i class="fas fa-check"></i></div>
-                        <p>財物損害は¥100,000,000まで無料で補償</p>
-                    </div>
+        </section>
 
-                    <div class="d-flex mb-2">
-                        <div class="mr-3"><i class="fas fa-check"></i></div>
-                        <p>$1,000,000の賠償責任保険が無料で付帯</p>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="mr-3"><i class="fas fa-check"></i></div>
-                        <p>24時間365日対応グローバルカスタマーサポート</p>
-                    </div>
+        <section class="section3 content-width">
+          <div class="row main-row mb-sm">
+            <div class="col-lg-4 mb-sm">
+              <div class="child-row">
+                <div class="">
+                  <h2 class="section-title">料金診断</h2>
+                  <p class="title-text">
+                    格安スマホを検討するなら、まずは料金シミュレーションであなたにぴったりのプランの簡単診断を。
+                  </p>
                 </div>
-            </div>
-            <div class="main5-part5 my-5 text-center">
-                <img class="img-fluid image" src="https://picsum.photos/800/800" alt="イメージ画像">
-            </div>
-        </div>
-    </div>
-
-    <div class="main3 my-5">
-        <div class="main3-part1 container-fluid">
-            <div class="h2-part">
-                <h2 class="my-5">シンプルな決済</h2>
-            </div>
-            <div class="h2-part2 d-xl-flex mx-md-auto">
-                <div class="h2-part3  mx-md-auto mb-4">
-                    <h3 class="my-3">料金設定は完全に自由</h3>
-                    <p class="mb-5">料金は常に自由に選択できます。 迷ったときには、 域内需要に合わせて設定できるツールがあります。</p>
+                <div class="">
+                  <img src="https://mobile.line.me/img/img_top03_01.png" alt="" class="">
                 </div>
-                <div class="h2-part3  mx-md-auto">
-                    <h3 class="my-3">手数料が安い</h3>
-                    <p class="mb-5">登録に費用は一切かかりません。Airbnbは通常、予約ごとに業界で最低の均一3％をサービス料としていただいております。</p>
-                </div>
-                <div class="h2-part3  mx-md-auto">
-                    <h3 class="my-3">迅速な支払い</h3>
-                    <p class="mb-5">ゲストのチェックイン後に、Paypal、直接振り込み、またはその他の利用可能な方法で受取金を送金できます。</p>
-                    <a href="https://www.airbnb.jp/d/financials">Airbnb収入を得るまでの流れを見る</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="main4 my-5 container-fluid">
-        <div class="main4-part1 d-md-flex align-items-center">
-            <div class="main4-part2">
-                <img class="img-fluid image2" src="https://picsum.photos/800/800" alt="" >
-            </div>
-            <div class="main4-part3 ml-md-5 my-auto">
-                <div><i class="fas fa-quote-left mt-5"></i></div>
-                <p>ホスト収入でキッチンリフォーム。お家をいろいろアップグレードしました。</p>
-                <p class="my-3 sub-text">Tessaさんはロンドン在住。ホストになって経済的なゆとりができました</p>
-                <a href="https://www.airbnb.jp/d/host_testimonial_tessa" class="my-3 d-inline-block check-btn">ホスト実践例をチェック</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="main6 my-5">
-        <div class="main6-part1 container-fluid">
-            <div class="h2-part">
-                <h2 class="my-5">夢を共有する仲間が世界中に</h2>
-            </div>
-            <div class="main6-part2 h2-part2 d-md-flex justify-content-center">
-                <div class="h2-part3  mx-auto mb-4 p-0">
-                        <div class="number my-2 ">290万</div>
-                        <p class="mb-5">Airbnbのホスト</p>
-               </div>
-                <div class="h2-part3 mx-auto  p-0">
-                    <div class="number my-2">80万</div>
-                    <p class="mb-5">Airbnbにおける毎晩の平均宿泊数</p>
-                </div>
-                <div class="h2-part3 mx-auto  p-0">
-                    <div class="number my-2">14,000</div>
-                    <p class="mb-5">月あたりの新規登録ホスト数</p>
+              </div>
+                <div class="col-12">
+                  <p class="link-text">
+                    料金診断する
+                  </p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="main2 my-5 container-fluid">
-        <div class="h2-part">
-            <h2 class="my-5">Airbnbについて</h2>
-        </div>
-        <div class="main2-part1  d-xl-flex">
-            <div class="h3-part1 my-5 ">
-                <h3 class="my-4">Airbnbとは？</h3>
-                <p>Airbnbは世界中の宿泊先や体験と人々をつなぎます。 ホストたちが原動力となるコミュニティが、地元のように旅するユニークな機会をゲストに提供しています。</p>
-            </div>
-            <div class="h3-part1 my-5 ">
-                <h3 class="my-4">ホスティングとは？</h3>
-                <p>空いているお部屋やお家、得意分野があるなら、世界中の仲間とシェアして暮らしをステップアップできます。 掲載できるのはお部屋や体験です。掛け持ちもOK。 無理のないペースでできます。</p>
-                <a href="https://www.airbnb.jp/host/experiences?from_homehost=1">体験ホスティングの詳細はこちら</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="main7 my-5 container-fluid">
-        <div class="h2-part">
-            <h2 class="my-5">よくある質問</h2>
-        </div>
-        <div class="main7-part1 d-xl-flex mx-auto">
-            <div class="main7-part2 mx-md-auto">
-                <div class="p"><p class="mb-3 pb-4 border-bottom"><a href="#">Airbnbホストになれるのはどんな人？</a></p></div>
-                <p class="mb-3 pb-4 border-bottom"><a href="#">予約前にゲストに求められる要件は？</a></p>
-                <p class="mb-3 pb-4 border-bottom"><a href="#" class="">お部屋の掲載料はいくら？</a></p>
-            
-            </div>
-            <div class="main7-part2">
-                <p class="mb-3 pb-4 border-bottom"><a href="#">家財破損があった場合、どのような補償がありますか？</a></p>
-                <p class="mb-3 pb-4 border-bottom"><a href="#">リスティングの料金を選ぶには？</a></p>
-                <p class="mb-3 pb-4 border-bottom"><a href="#">料金設定の支援ツールはありますか？</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="main container-fluid">
-        <h3 class="h3-child">ホスティングの詳細はこちら</h3>
-        <div class="main-child1 d-md-flex mx-md-auto">
-            <div class="main-child2 d-flex d-md-block align-items-center mb-3 mx-md-auto ">
-                <img class="image3" src="https://picsum.photos/330/200" alt="" >
-                <div class="main-child3 ml-3 mt-xl-3 ml-xl-0">
-                    <p class="p my-auto">初期設定</p>
-                    <p class="my-auto mb-xl-3">ホスティング入門ガイド</p>
-                    <a href="#" class=" d-none d-xl-block">もっと詳しく見る</a>
-                    <a href="#" class=""></a>
+            <div class="col-lg-4 mb-sm">
+              <div class="child-row">
+                <div class="">
+                  <h2 class="section-title">iPhoneも使える</h2>
+                  <p class="title-text">
+                    お使いのiPhoneをそのまま利用可能。毎月のスマホ代が安くなる。
+                  </p>
+                </div>
+                <div class="">
+                  <img src="https://mobile.line.me/img/img_top03_sp.png" alt="" class="section3-img">
+                </div>
+              </div>
+                <div class="col-12">
+                  <p class="link-text">
+                    使えるiPhoneをみる
+                  </p>
                 </div>
             </div>
-            <div class="main-child2 d-flex d-md-block align-items-center mb-3 mx-md-auto ">
-                <img class="image3" src="https://picsum.photos/330/200" alt="" >
-                <div class="main-child3 ml-3 mt-xl-3 ml-xl-0">
-                    <p class="p my-auto">安全</p>
-                    <p class="my-auto mb-xl-3">ホストを守るAirbnbのしくみ</p>
-                    <a href="#" class=" d-none d-xl-block">もっと詳しく見る</a>
+            <div class="col-lg-4 mb-sm">
+              <div class="child-row">
+                <div class="">
+                  <h2 class="section-title">LINEモバイルの<br>
+                  始め方</h2>
+                  <p class="title-text">
+                    申し込みの流れをマンガで紹介！簡単な申し込みをさらにわかりやすく。
+                  </p>
+                </div>
+                <div class="">
+                  <img src="https://mobile.line.me/img/img_top03_03.png" alt="" class=" ">
+                </div>
+              </div>
+                <div class="col-12">
+                  <p class="link-text">
+                    マンガでみる
+                  </p>
                 </div>
             </div>
-            <div class="main-child2 d-flex d-md-block align-items-center mb-3 mx-md-auto ">
-                <img class="image3" src="https://picsum.photos/330/200" alt="" >
-                <div class="main-child3 ml-3 mt-xl-3 ml-xl-0">
-                    <p class="p my-auto">マネープラン</p>
-                    <p class="my-auto mb-xl-3">Airbnbで収益を得るには</p>
-                    <a href="#" class=" d-none d-xl-block">もっと詳しく見る</a>
-                </div>
+          </div>
+        </section>
+
+        <section class="row section4 main-row2 no-gutters pb-5">
+        <div class="content-width">
+          <div class="row section4-row1 no-gutters">
+            <div class="col col-left">
+              <h2 class="section-title">
+                初心者ガイド
+              </h2>
+              <p class="title-text">
+                格安SIMや格安スマホ<br class="d-lg-none">
+                の疑問に答えます。
+              </p>
             </div>
-        </div>
-    </div>
-</div>    
+            <div class="col">
+              <img src="https://mobile.line.me/img/top_guid_sp.png" alt="女性の画像" class="section4-title-img d-lg-none">
+              <img src="https://mobile.line.me/img/top_guid_pc.png" alt="二人の画像" class="section4-title-lg-img d-none d-lg-block">
 
-    <div class="main8 my-5">
-        <div class="main8-child ">
-            <h2>収益化してみますか?</h2>
-            <a href="#" class="main8-btn d-inline-block mt-4">はじめる</a>
+            </div>
+          </div>
+          <div class="row no-gutters row-child">
+            <div class="col-lg-6 main-col ">
+              <h3 class="mini-title">
+                初心者の方向けのおすすめ記事
+              </h3>
+              <div class="row no-gutters sub-row">
+                <div class="col-md-6 sub-col py-3 ">
+                  <img src="https://mobile.line.me/img/top_guid_article1_sp.png" alt="" class="section4-img d-lg-none">
+                  <img src="https://mobile.line.me/img/top_guid_article1_pc.png" alt="" class="section4-img d-none d-lg-block ">
+                  <p class="sub-col-text">
+                    格安SIMとは？選び方のポイントやメリット・デメリットを解説</p>
+                    <a href="#" class="detail-link">詳細を見る</a>
+                </div>
+                <div class="col-md-6 sub-col py-3 pl-lg-3">
+                  <img src="https://mobile.line.me/img/top_guid_article2_sp.png" alt="" class="section4-img d-lg-none">
+                  <img src="https://mobile.line.me/img/top_guid_article2_pc.png" alt="" class="section4-img d-none d-lg-block">
+                  <p class="sub-col-text">
+                    安心してLINEモバイルに乗り換えられる5つの理由</p>
+                    <a href="#" class="detail-link">詳細を見る</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 main-col main-col2">
+              <h3 class="mini-title">
+                新着記事
+              </h3>
+              <div class="row no-gutters sub-row">
+                <div class="col-12 sub-col py-3">
+                  <p class="sub-col-text2">
+                    Wi-Fiとは？仕組みやメリット、利用時の注意点をわかりやすく解説！
+                  </p>
+                </div>
+                <div class="col-12 sub-col py-3">
+                  <p class="sub-col-text2">
+                    iPhoneを中古で購入するには？その方法と注意点
+                  </p>
+                </div>
+                <div class="col-12 sub-col py-3">
+                  <p class="sub-col-text2">
+                    iPhoneの本体交換・修理の方法とは？iPhoneエクスプレス交換サービスも紹介
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+        </section>
 
-    <footer class="container-fluid">
-        <div class="footer d-none d-md-flex justify-content-center">
-            <div class="footer-child">
-                <p class="my-3">Airbnb</p>
-                <ul>
-                    <li class="mb-1"><a href="#">採用情報</a></li>
-                    <li class="mb-1"><a href="#">ニュース</a></li>
-                    <li class="mb-1"><a href="#">ポリシー</a></li>
-                    <li class="mb-1"><a href="#">ダイバーシティ＆ビロンギング</a></li>
-                    <li class="mb-1"><a href="#">アクセシビリティ対応</a></li>
-                    <li class="mb-1"><a href="#">企業情報</a></li>
+        <section class="section5 mb-sm">
+          <div class="content-width">
+            <div class="row no-gutters">
+              <div class="col-12">
+                <div class="title">
+                  <h3 class="mini-title">お知らせ</h3>
+                  <a href="#" class="link-text">もっとみる</a>
+                </div>
+                <div class="info d-lg-flex">
+                  <time datetime="2020-5-10">2020/05/10</time>
+                  <p class="section5-text pl-lg-3">友だち追加でポイントプレゼントキャンペーン開始</p>
+                </div>
+                <div class="info d-lg-flex">
+                  <time datetime="2020-5-10">2020/05/10</time>
+                  <p class="section5-text pl-lg-3">新型コロナウイルス感染症拡大に伴う、カスタマーセンターへの影響について</p>
+                </div>
+                <div class="info d-lg-flex">
+                  <time datetime="2020-5-10">2020/05/10</time>
+                  <p class="section5-text pl-lg-3">新生活応援！最大5,000円相当選べるキャンペーン開始</p>
+                </div>
+                <div class="info d-lg-flex">
+                  <time datetime="2020-5-10">2020/05/10</time>
+                  <p class="section5-text pl-lg-3">Xiaomi Mi Note 10販売開始Twitterキャンペーン開始</p>
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 mb-sm">
+                <div class="faq-title">
+                  <h3 class="mini-title">よくある質問</h3>
+                  <a href="#" class="link-text">もっとみる</a>
+                </div>
+                <div class="faq">
+                  <h2 class="section5-text">格安スマホ/格安SIMはどんな人におすすめですか？</h2>
+                  <p class="fq-p">
+                    「とにかく安くスマホを使いたい」「キャリアメールがなくても困らない」「データ通信がメインで長電話しない」そんな人におすすめです。
+                    現在のスマホの使い方やプランによって格安スマホの選び方も変わってきます。今使っているスマホの通信費を見直したい方は<span class="green">格安スマホや格安SIMについて失敗しない選び方</span>をチェックしてみてください。
+                  </p>
+                </div>
+                <div class="faq">
+                  <h2 class="section5-text">格安SIMが安いのはどうして？安いとデメリットはあるの？</h2>
+                  <p class="fq-p">
+                    格安SIMが安い理由は、大手携帯電話会社と比べて大幅にコストが抑えられているからです。
+                    格安SIMは、大手携帯電話会社の回線を借りて通信サービスを提供しています。
+                    そのため、新規技術開発、基地局・収容局の維持、メンテナンス等、回線の維持にかかる莫大なお金が、格安SIMでは不要なのです。
+                    安くなる理由はわかったけどまだ何かあるか不安…という方も、デメリットも含めてきちんと理解しておきましょう。詳しくは<span class="green">格安SIMが安いのはどうして？安いとデメリットはあるの？</span>をチェックしてみてください。
+                  </p>
+                </div>
+                <div class="faq">
+                  <h2 class="section5-text">iPhoneは利用できますか？</h2>
+                  <p class="fq-p">
+                    LINEモバイルなら<span class="green">今お使いのiPhoneがそのまま使えます。</span>ただしご利用の端末やiOSバージョンにより利用できない場合があるため、詳しくは<span class="green">動作確認済み端末検索</span>でご確認ください。
+                    また、LINEモバイルの契約と同時に<span class="green">iPhoneを購入</span>することもできます。
+                  </p>
+                </div>
+                <div class="faq">
+                  <h2 class="section5-text">どれくらい安くなるの？</h2>
+                  <p class="fq-p">
+                    LINE利用が多い方向けはデータフリーオプション「LINEデータフリー」込みで月額600円（税抜）～。
+                    LINEに加えてTwitter・Facebookもよく使う方はデータフリーオプション「SNSデータフリー」込みで月額1,260円（税抜）～。
+                    さらにInstagramとLINE MUSICも楽しみたい方はデータフリーオプション「SNS音楽データフリー」込みで月額1,460円（税抜）～。
+                    「LINEモバイルに乗り換えると毎月どれくらい安くなるのか」を簡単に診断できる<span class="green">料金シミュレーション</span>や、<span class="green">料金プラン</span>ページをチェックしてみてください。
+                  </p>
+                </div>
+                <div class="faq">
+                  <h2 class="section5-text">データフリーとはどんな機能ですか？</h2>
+                  <p class="fq-p">
+                    対象サービス利用時にデータ通信量を消費しない機能のことをいいます。
+
+                    データ容量を使い切っても（通信速度制限がかかっても）、データフリー対象サービスの通信速度は落ちません。
+                    
+                    詳しくは<span class="green">データフリー</span>ページをチェックしてみてください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-width">
+            <img class="apply-banner w-100 d-lg-none" src="https://mobile.line.me/img/img_top_nowOrder_sp.png" alt="">
+            <img src="https://mobile.line.me/img/img_top_nowOrder_pc.png" alt="" class="d-none d-lg-block mx-auto">
+          </div>
+        </section>
+
+        <section class="section6 content-width mb-sm">
+          <div class="row no-gutters section6-row1">
+            <h3 class="section-title">
+              LINEモバイル<br class="d-md-none">
+              ってどのくらい<br class="d-md-none"> 
+              安いの？
+            </h3>
+            <div class="section6-part">
+              <img src="https://mobile.line.me/img/ico_section_men.png" alt=""  class="section5-title-img">
+            </div>
+          </div>
+          <div class="row section6-row2">
+            <div class="col-md-6 mb-sm">
+              <div class="col-title">
+                主要格安スマホ会社と比べた場合
+              </div>
+              <div class="col-main">
+                <h4>主要格安スマホ</h4>
+                <p class="col-main-text m-0">音声通話SIM月額基本料<br>
+                  <span class="col-main-text2">3GB 1,480円</span>
+                </p>
+                <p class="col-main-text m-0">+</p>
+                <p class="col-main-text">
+                  全プラン<br>
+                  <span class="col-main-text2">
+                    LINEデータ<br class="d-lg-none">
+                    消費ゼロ<br>
+                    0円
+                  </span>
+                </p>
+                <a href="#" class="main-btn">
+                  料金プラン詳細をみる
+                </a>
+                <ul class="ul-mb">
+                  <li>※キャンペーン・割引非適用時。2020年2月19日時点。税抜。主要格安スマホとは、MNOの特定関係法人または、利用者の数の割合が0.7%を超えるMVNO事業者を指します。</li>
+                  <li>※対象サービス内で一部適用外あり。有料サービスの利用の際は別途お支払い必要。データフリー対象サービスの詳細はデータフリーページからご確認ください。</li>
                 </ul>
+              </div>
             </div>
-            <div class="footer-child">
-                <p class="my-3">スタッフのおすすめ</p>
+            <div class="col-md-6">
+              <div class="col-title">
+                大手携帯会社と比べた場合
+              </div>
+              <div class="col-main">
+                <p class="col-main-text3 text-left">
+                  例えば大手携帯会社で月額5,680円だった場合、LINEモバイルに乗り換えれば月額3,080円に節約もできます。
+                </p>
+                <img src="https://mobile.line.me/img/img_saving_graph_pc.png" alt="" class="section6-img">
+                <a href="#" class="main-btn">
+                  料金診断をする
+                </a>
                 <ul>
-                    <li class="mb-1"><a href="#">信頼＆安全</a></li>
-                    <li class="mb-1"><a href="#">お友達紹介クーポン</a></li>
-                    <li class="mb-1"><a href="#">Airbnb Citizen</a></li>
-                    <li class="mb-1"><a href="#">出張</a></li>
-                    <li class="mb-1"><a href="#">アクティビティ</a></li>
-                    <li class="mb-1"><a href="#">Airbnbmag</a></li>
+                  <li>※1 NTTドコモで、ギガライト (5GB) (家族通話無料 + sp モード+パケット使用料 + 5分通話無料オプション) を2年間の定期契約ありで利用した場合の端末代金を除いた毎月の利用金額（2020年2月現在)。</li>
+                  <li>※2 ベーシックプラン 6GB (音声通話SIM) のLINEデータフリーで、「10分電話かけ放題オプション」を足した毎月の利用金額(2020年2月現在）。</li>
+                  <li>※記載の金額は「税抜」表示です。</li>
                 </ul>
+              </div>
             </div>
-            <div class="footer-child">
-                <p class="my-3">ホスティング</p>
+          </div>
+        </section>
+
+        <section class="section7 content-width mb-sm">
+          <div class="col-12">
+            <h3 class="section-title">
+              キャンペーンで更にお得
+            </h3>
+          </div>
+          <div class="row no-gutters section7-row1">
+            <div class="col-lg-6 p-0">
+              <img src="https://mobile.line.me/img/SNS0yen-campaign2020_hondatsubasa_top_sp.png" alt="" class="section7-img d-lg-none">
+              <img src="https://mobile.line.me/img/SNS0yen-campaign2020_hondatsubasa_top_pc.png" alt="" class="d-none d-lg-block section7-img">
+            </div>
+            <div class="col-lg-6 section7-col2">
+              <h3 class="section-title">
+                料金例
+              </h3>
+              <p class="col-main-text3">
+                ベーシックプラン（3GB）＋SNSデータフリー
+              </p>
+              <div class="fee-plan">
+                <div class="plan-child red">
+                  <p class="plan-text">1ヶ月目
+                  </p>
+                  <p class="plan-text">0円
+                  </p>
+                </div>
+                <div class="plan-child red">
+                  <p class="plan-text">2ヶ月目
+                  </p>
+                  <p class="plan-text">0円
+                  </p>
+                </div>
+                <div class="plan-child black">
+                  <p class="plan-text">3ヶ月目以降
+                  </p>
+                  <p class="plan-text">1,760円
+                  </p>
+                </div>
+              </div>
+              <a href="#" class="main-btn">キャンペーン詳細をみる</a>
+              <p class="mini-text">※記載の金額は「税抜」表示です。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section6 content-width mb-sm">
+          <div class="row no-gutters section6-row1">
+            <h3 class="section-title">
+              スマートフォンは<br class="d-md-none">
+              どうやって<br class="d-md-none"> 
+              準備する？
+            </h3>
+            <div class="section6-part">
+              <img src="https://mobile.line.me/img/ico_section_women.png""  class="section5-title-img">
+            </div>
+          </div>
+          <div class="row section6-row2">
+            <div class="col-md-6 mb-sm">
+              <div class="col-title">
+                今のスマホをそのまま使う
+              </div>
+              <div class="col-main col-main2">
+                <p class="col-main-text3 text-left">
+                  LINEモバイルならお使いのスマートフォンがそのまま使えます。写真や電話帳の移行などの面倒な作業は一切なし。SIMカードの挿し替えだけで利用開始できます。
+                </p>
+                <img src="https://mobile.line.me/img/img_top_sim_change.png" alt="" class="section6-sim-img ">
+                <a href="#" class="main-btn mb-0">
+                  動作確認済み端末をみる
+                </a>
+                <a href="#" class="main-btn mt-2">
+                  使えるiPhoneをみる
+                </a>
                 <ul>
-                    <li class="mb-1"><a href="#">おもてなしの心</a></li>
-                    <li class="mb-1"><a href="#">ホストの責任</a></li>
-                    <li class="mb-1"><a href="#">コミュニティセンター</a></li>
-                    <li class="mb-1"><a href="#">体験を掲載</a></li>
-                    <li class="mb-1"><a href="#">オープンホーム</a></li>
-                    <li class="mb-1"><a href="#">リソースセンター<span class="badge  d-inline-block ml-1">新着</span></a></li>
+                  <li>※LINEモバイル株式会社が独自に調査し、データ通信・音声通話・テザリングが行えることを動作確認した端末は動作確認済み端末検索からご覧いただけます。ご利用端末が動作確認済みかご確認ください。</li>
                 </ul>
+              </div>
             </div>
-            <div class="footer-child">
-                <p class="my-3">サポート</p>
-                <ul>
-                    <li class="mb-1"><a href="#">ヘルプ</a></li>
-                    <li class="mb-1"><a href="#">エリアサポート<span class="badge badge d-inline-block ml-1">新着</span></a></li>
-                </ul>
+            <div class="col-md-6">
+              <div class="col-title">
+                新しく購入する
+              </div>
+              <div class="col-main col-main2">
+                <p class="col-main-text3 text-left">
+                  契約時に新しいスマートフォンをセットで購入することができます。
+                </p>
+                <img src="https://mobile.line.me/img/img_top_device_list.png" alt="" class="section6-phone-img">
+                <a href="#" class="main-btn">
+                  端末一覧をみる
+                </a>
+
+              </div>
             </div>
+          </div>
+        </section>
+
+        <section class="section7 content-width mb-sm">
+          <div class="col-12">
+            <h3 class="section-title">
+              難しそう…と思った方は<br class="d-lg-none">
+              店舗で乗り換え
+            </h3>
+          </div>
+          <div class="row no-gutters section7-row1 border">
+            <div class="col-lg-6 p-0">
+              <img src="https://mobile.line.me/img/img_top_shop_sp.png" alt="" class="section7-img ">
+            </div>
+            <div class="col-lg-6 section7-col3">
+              <p class="col-main-text3 f-14 m-0 text-left">
+                わからないことがあれば、店舗スタッフまでお気軽にご相談ください。新規のお申し込みも他社からの乗り換え（MNP転入）もその日からLINEモバイルが利用可能です。
+              </p>
+              <a href="#" class="main-btn">店舗を探す</a>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="center-text mb-sm">
+          <p class="text-center">特に記載のある場合を除き、記載の金額は全て「税抜」表示です。</p>
         </div>
 
-        <div class="footer2">
-            <dvi class="d-flex container-fluid mt-3">
-                <div class="mt-4 mr-3"><i class="fab fa-airbnb "></i></div>
-                <div>
-                    <a href="https://www.airbnb.jp/about/company-details" class="">Airbnb Global Services Limited<br>
-                    観光庁長官(01)第S0001号(2018年6月15日-2023年6月14日) </a>
-                    <div class="d-flex">
-                        <p>© 2020 Airbnb, Inc. All rights reserved.</p>
-                        <div class="ml-3 d-none d-md-block">
-                            <a href="#">利用規約</a>
-                            <span>・</span>
-                            <a href="#">プライバシー</a>
-                            <span>・</span>
-                            <a href="#">サイトマップ</a>
-                        </div>
-                    </div>
-                </div>
-                 
-                <div class="icons d-none d-md-flex"> 
-                    <div class="mr-3"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
-                    <div class="mr-3"><a href="#"><i class="fab fa-twitter"></i></a></div>
-                    <div class="mr-3"><a href="#"><i class="fab fa-instagram"></i></a></div>
-                </div>
+        <section class="section__child8 content-width mb-sm">
+          <div class="section__container">
+              <div class="section1 top row no-gutters">
+                  <div class="section1-child col-lg-3">
+                      <h3><a href="#" class="right">ホーム</a></h3>
+                  </div>
+                  <div class="section1-child col-lg-3">
+                      <h3><a href="#" class="down">特徴</a></h3>
+                      <ul>
+                          <li><a href="#" class="">特徴トップ</a></li>
+                          <li><a href="#" class="">料金をより安く</a></li>
+                          <li><a href="#" class="">データフリー</a></li>
+                          <li><a href="#" class="">使えるiPhone</a></li>
+                          <li><a href="#" class="">ポイント支払い</a></li>
+                          <li><a href="#" class="">初心者ガイド</a></li>
+                      </ul>
+                  </div>
+                  <div class="section1-child col-lg-3">
+                      <h3><a href="#" class="down">料金</a></h3>
+                      <ul>
+                          <li><a href="#">料金トップトップ</a></li>
+                          <li><a href="#">必要な費用一覧</a></li>
+                          <li><a href="#">オプションサービス</a></li>
+                          <li><a href="#">料金シュミレーター</a></li>
+                      </ul>
+                  </div>
+                  <div class="section1-child col-lg-3">
+                      <h3><a href="#" class="down">端末</a></h3>
+                      <ul>
+                          <li><a href="#">端末トップ</a></li>
+                          <li><a href="#">iPhone</a></li>
+                          <li><a href="#">スマートフォン・他</a></li>
+                          <li><a href="#">動作確認済み端末検索</a></li>
+                          <li><a href="#">機種変更</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="section1 row no-gutters">
+                  <div class="section1-child col-lg-3">
+                      <h3><a href="#" class="down">契約の流れ</a></h3>
+                      <ul>
+                          <li><a href="#">契約の流れトップ</a></li>
+                          <li><a href="#">iPhone</a></li>
+                          <li><a href="#">本人確認書類一覧</a></li>
+                          <li><a href="#">新規番号契約の流れ</a></li>
+                          <li><a href="#">MNP転入の流れ
+                              </a></li>
+                          <li><a href="#">マンガで解説
+                          </a></li>
+                      </ul>
+                  </div>
+
+                  <div class="section1-child col-lg-3">
+                      <h3><a href="#" class="down">店舗</a></h3>
+                      <ul>
+                          <li><a href="#">店舗検索</a></li>
+                          <li><a href="#">iPhone</a></li>
+                          <li><a href="#">店舗契約に必要なもの</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="section1-child col-lg-3">
+                      <h3><a href="#" class="down">サポート</a></h3>
+                      <ul>
+                          <li><a href="#">サポートトップ</a></li>
+                          <li><a href="#">iPhone</a></li>
+                          <li><a href="#">よくある質問・用語集</a></li>
+                          <li><a href="#">問い合わせ</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="section1-child last-child col-lg-3">
+                      <h3><a href="#" class="right">キャンペーン</a></h3>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="section9">
+        <div class="content-width">
+        <h3 class="section-title">LINEモバイルの公式アカウント</h3>
+        <p class="title-text">お得で便利な情報をお届けしています。</p>
+        <div class="row section9-row text-left">
+          <div class="line col-lg-4 ">
+            <img src="https://mobile.line.me/img/ico_circle_line2.png" alt="" class="section9-img">
+            <p>LINEアプリ公式アカウント<br>
+              を友だち追加する</p>
+          </div>
+          <div class="twitter col-lg-4">
+            <img src="https://mobile.line.me/img/ico_circle_twitter_pc.png" alt="" class="section9-img">
+            <p>Twitterをフォローする</p>
+          </div>
         </div>
-        </dvi>
-    </footer>
+      </div>
+      </section>
+
+      <section class="row section10 main-row2 no-gutters pb-4">
+        <div class="content-width">
+          <div class="row section10-row1 no-gutters">
+            <div class="col-5 col-lg-7 text-left pt-5">
+              <p class="title-text">
+                SIMカードは最短当日発送！
+              </p>
+              <p class="title-text text-1">
+                格安SIM･格安スマホなら<br class="d-lg-none">
+                <span class="f-30">LINEモバイル</span>
+              </p>
+              <img src="https://mobile.line.me/img/top_apply_btn_sp.png" class="apply-img d-lg-none" alt="">
+              <img src="https://mobile.line.me/img/top_apply_btn_pc.png" class="apply-img d-none d-lg-block " alt="">
+              <div class="row no-gutters section10-row d-none d-lg-block">
+                <p class="text1">LINEモバイルはシンプルでわかりやすいをモットーに展開をしている格安スマホ・格安SIMのサービスです。</p>
+                <p class="text2">LINEや主要SNSのデータ通信量をカウントしない「データフリー」機能などが特徴。あなたの利用シーンにあった料金プランを提供中。ユーザー満足度90%超え。送料無料・24時間受付OK・最短当日発送！今だけのお得なキャンペーンも実施しています。</p>
+                <p class="text3">※満足度90.3%：調査時期：2018年12月／2019年1月・2月、調査方法：「LINEモバイル」公式アカウントからの回答（合計9,888名）</p>
+              </div>
+            </div>
+            <div class="col-5 offset-2  offset-lg-0 col-lg-5 pt-5">
+              <img src="https://mobile.line.me/img/top_footer_bg_sp.png" alt="女性の画像" class="section10-honda-img d-lg-none">
+              <img src="https://mobile.line.me/img/top_footer_bg_pc.png" alt="女性の画像" class="section10-honda-img d-none d-lg-block">
+            </div>
+          </div>
+          <div class="row no-gutters row-child d-lg-none">
+            <p class="text1">LINEモバイルはシンプルでわかりやすいをモットーに展開をしている格安スマホ・格安SIMのサービスです。</p>
+            <p class="text2">LINEや主要SNSのデータ通信量をカウントしない「データフリー」機能などが特徴。あなたの利用シーンにあった料金プランを提供中。ユーザー満足度90%超え。送料無料・24時間受付OK・最短当日発送！今だけのお得なキャンペーンも実施しています。</p>
+            <p class="text3">※満足度90.3%：調査時期：2018年12月／2019年1月・2月、調査方法：「LINEモバイル」公式アカウントからの回答（合計9,888名）</p>
+          </div>
+        </div>
+      </section>
+      </main>
+      
+      <footer>
+        <div class="footer">
+          <ul>
+            <li><a href="#">サイトマップ</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法について</a></li>
+            <li><a href="#">資金決済に関する法律について</a></li>
+            <li><a href="#">商標について</a></li>
+          </ul>
+          <p class="d-lg-none">© LINE MOBILE</p>
+          <img src="https://mobile.line.me/common/img/ico_footer.png" class="d-none d-lg-block footer-img" alt="">
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
 </body>
 </html>
